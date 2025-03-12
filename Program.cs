@@ -22,5 +22,6 @@ namespace WebWeatherDashboard
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+        //Comentario de teste
     }
 }
