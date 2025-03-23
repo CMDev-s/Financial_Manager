@@ -1,1 +1,1 @@
-A Weather Dashboard is a web-based application that fetches and displays weather information, such as current conditions, forecasts, and trends. The project focuses on using APIs to retrieve data and presenting it in a user-friendly interface.
+Financial Manager is a web-based application that fetches and displays financial information, such as current conditions, market now, and prices. The project focuses on using APIs to retrieve data and presenting it in a user-friendly interface.
