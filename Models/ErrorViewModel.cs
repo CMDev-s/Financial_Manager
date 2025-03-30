@@ -1,6 +1,6 @@
 using System;
 
-namespace WebWeatherDashboard.Models
+namespace WebFinancial.Models
 {
     public class ErrorViewModel
     {

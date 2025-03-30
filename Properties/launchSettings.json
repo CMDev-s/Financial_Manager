@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "WebWeatherDashboard": {
+    "WebFinancial": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
