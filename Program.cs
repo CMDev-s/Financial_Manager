@@ -8,11 +8,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebFinancial.Controllers;
 
+
+using WebFinancial.ViewModels;
+
 namespace WebFinancial
 {
     public class Program
     {
-		//ATENÇÃO: Lixo de Intalação do Visual Studio
+		//ATENÇÃO: LIXO DE INTALAÇÃO DO VISUAL STUDIO
+
 		//public static void Main(string[] args)
 		//{
 		//    CreateHostBuilder(args).Build().Run();
@@ -30,7 +34,8 @@ namespace WebFinancial
 		
 		public static async Task Main(string[] args)
 		{
-			string apiKey = "NL4A7J42AZDAP4CG";
+			var ViewModel = new AlphaVantageViewModel();
+			string apiKey = ViewModel.ApiKey;
 			string fromSymbol = "USD";
 			string toSymbol = "BRL";
 

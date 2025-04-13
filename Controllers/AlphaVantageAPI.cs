@@ -1,18 +1,26 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
 using System;
+using WebFinancial.ViewModels;
+
 
 namespace WebFinancial.Controllers
 {
     public class AlphaVantageAPI
     {
 		private readonly string _apiKey;
-		private readonly string _baseUrl = "https://www.alphavantage.co/query";
+		private const string _apiKeySecret = "NL4A7J42AZDAP4CG"; //OBS: Caso altere essa chave favor alterar na AlphaVantageViewModel
+																 //(Como forma de segurança, podemos adicionar essa chave em um arquivo .config ou no Azure Key Vault da vida,
+																 //que são aplicaçoes em nuvem direcionadas para armazenar segredos em um cofre de chaves.
+        private readonly string _baseUrl = "https://www.alphavantage.co/query";
+
 
 		public AlphaVantageAPI(string apiKey)
 		{
 			_apiKey = apiKey;
-		}
+        }
+
+
 
 		public async Task<string> GetForexDataAsync(string fromSymbol, string toSymbol, string outputsize = "compact")
 		{
